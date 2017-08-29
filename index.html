@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Small Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+    <link href="css/tabletanueva.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    
+      
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a  href="contact.html" class="btn btn-block btn-primary" href="#" role="button" id="botoncontacto">Contact &raquo;</a>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a <a onclick="reduceFontSizeTo10px()" class="btn btn-primary btn-lg" href="#" role="button" id="botonredfuente">reducir fuente &raquo; </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary btn-lg" href="#" role="button" id="botonservicio">Servicio &raquo; </a>
+            </li>
+            <li class="nav-item">
+              <a onclick="increaseFontSizeBy100px()" class="btn btn-primary btn-lg" href="#" role="button" id="botonfuente">aumentar fuente &raquo; </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- =============================================================== -->
+    <script> 
+        function increaseFontSizeBy100px() {
+            document.getElementById('cont').style.fontSize = "100px";
+    /*        document.getElementById('botoncontacto').style.fontSize = "100px";
+            document.getElementById('botonservicio').style.fontSize = "100px";
+            document.getElementById('botonredfuente').style.fontSize = "100px";*/
+        }
+        function reduceFontSizeTo10px() {
+            document.getElementById('cont').style.fontSize = "20px";
+            /*document.getElementById('botoncontacto').style.fontSize = "20px";
+            document.getElementById('botonservicio').style.fontSize = "20px";
+            document.getElementById('botonredfuente').style.fontSize = "20px";*/
+        }
+    </script>
+    <!-- =============================================================== -->
+    <!-- Page Content -->
+    <div class="container" id = "cont">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="row">
+                <div class="col-sm-8">
+                   <iframe width="600" height="300" src="https://www.youtube.com/embed/UIyRXvHmXxo" frameborder="0" allowfullscreen></iframe>
+                </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4" >
+          <h1 style="color:black;">¡You're a warboy!</h1>
+          <p id="p1">Texto plano Punto2</p>
+          <a onclick="modificartexto()" class="btn btn-primary btn-lg" href="#" role="button" id="boton1">editartexto &raquo;</a>
+          <input style="display:none;" type="text" name="text1" id="text1" onkeyup="copiar()" value = "Texto plano Punto2">
+          <script type="text/javascript">
+            function modificartexto(){
+              document.getElementById("text1").style.display = 'inline-block';
+              document.getElementById("p1").innerHTML = document.getElementById("text1").value;
+            }
+    </script>
+          <a href="action.html" class="btn btn-block btn-primary" role="button">Call to Action</a>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Call to Action Well -->
+      <div class="card text-white bg-secondary my-4 text-center">
+        <div class="card-body">
+          <p class="text-white m-0">This call to action card is a great place to come with the Imortan Joe to be the cromated sons of Valhalla!</p>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row" id = "port" >
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Be our Gears of War</h2>
+              <p class="card-text"> Always need mechanics for the eternal war.<br/> <img src="img/mechanical.png" class="img-responsive" alt="Cinque Terre"></p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Let's rock baby!</h2>
+              <p class="card-text"> Join to our insanely cool war.<br/> <img src="img/action.png" class="img-responsive" alt="Cinque Terre"></p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">The Call of Glory!</h2>
+              <p class="card-text"> Call of death.<br/> <img src="img/imortan.png" class="img-responsive" alt="Cinque Terre">
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
